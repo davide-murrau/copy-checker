@@ -1,5 +1,2 @@
-# Object file
-*.o
-
-# Ada Library Information
-*.ali
+verify-backup/verify_work/
+verify-backup/verify_backup.conf
