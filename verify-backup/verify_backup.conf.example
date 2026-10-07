@@ -1,0 +1,14 @@
+# verify_backup.conf — one mapping per line:
+#
+#   NAME | SOURCE | DESTINATION [| DESTINATION ...]
+#
+# NAME         short label used in reports (letters, digits, . _ -)
+# SOURCE       folder whose files must be backed up
+# DESTINATION  folder(s) holding the copy, with the same relative layout as SOURCE.
+#              List several when the copy was split across disks: a source file is
+#              considered copied if it exists in at least one of them.
+#
+# Lines starting with # and blank lines are ignored.
+
+PHOTOS    | /volume1/photo/2024           | /volumeUSB1/usbshare/photo/2024
+PROJECT_A | /volume1/data/project_a/raw   | /volumeUSB1/usbshare/project_a/raw | /volumeUSB2/usbshare/project_a/raw
